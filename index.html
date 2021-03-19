@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<title>Шифр нигилистов онлайн | Зашифровать</title>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark" data-toggle="affix">
+		<div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+			<a class="navbar-brand" href="/">Шифр нигилистов</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+	</nav>
+	<div class="container col-12">
+		<div class="row">
+			<div class="form-group col-6 bg-light">
+				<center>
+					<label><span class="badge badge-dark p-1">Зашифровать</span></label>
+				</center>
+				<textarea id="text" placeholder="Текст" class="form-control" rows="5"></textarea>
+				<label>Первый ключ</label>
+				<input type="text" id="key" placeholder="asdf" class="form-control">
+				<label>Второй ключ</label>
+				<input type="text" id="key2" placeholder="asdf" class="form-control"><br>
+				<div id="alert" class="alert alert-danger" role="alert" style="display: none;"></div>
+				<textarea id="result" class="form-control" placeholder="Результат" rows="5" style="display: none;" readonly></textarea><br>
+				<button type="button" id="button" class="btn btn-success btn-lg btn-block">Зашифровать</button>
+			</div>
+			<div class="form-group col-6 bg-light">
+				<center>
+					<label><span class="badge badge-dark p-1">Расшифровать</span></label>
+				</center>
+				<textarea id="text_decrypt" placeholder="Текст" class="form-control" rows="5"></textarea>
+				<label>Первый ключ</label>
+				<input type="text" id="key_decrypt" placeholder="asdf" class="form-control">
+				<label>Второй ключ</label>
+				<input type="text" id="key2_decrypt" placeholder="asdf" class="form-control"><br>
+				<div id="alert_decrypt" class="alert alert-danger" role="alert" style="display: none;"></div>
+				<textarea id="result_decrypt" class="form-control" placeholder="Результат" rows="5" style="display: none;" readonly></textarea><br>
+				<button type="button" id="button_decrypt" class="btn btn-success btn-lg btn-block">Расшифровать</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
